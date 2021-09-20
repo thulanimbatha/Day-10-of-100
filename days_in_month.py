@@ -1,7 +1,7 @@
 # MODIFIED - determine whether a given year is a leap year
 
 def is_leap_year(year):
-    '''Returns True if given month (int) is a Leap year '''    #Docstrings
+    '''Returns True if given year (int) is a Leap year '''    #Docstrings
     if year % 4 == 0:
         if year % 100 == 0:
             if year % 400 == 0:
@@ -14,7 +14,7 @@ def is_leap_year(year):
         return False
 
 def days_in_month(year, month):
-    '''Returns int number of days in given month (int)'''   # Docstrings
+    '''Returns int number of days in given month (int) and year (int)'''   # Docstrings
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31 ,30, 31]
     if is_leap_year(year) and month == 2:
         return 29
